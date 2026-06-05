@@ -14,7 +14,7 @@ This action solves the problem of updating action.yml files with digest-pinned D
 
 ```yaml
 - name: Update action.yml with new Docker image
-  uses: jdfalk/update-action-docker-ref-action@v1
+  uses: falkcorp/gha-update-action-docker-ref@v1
   with:
     action-file: action.yml
     image-name: ghcr.io/jdfalk/my-action
@@ -47,7 +47,7 @@ Replace HEREDOC Python with this action:
 
 ```yaml
 - name: Update action.yml
-  uses: jdfalk/update-action-docker-ref-action@v1
+  uses: falkcorp/gha-update-action-docker-ref@v1
   with:
     image-name: ${{ env.IMAGE_NAME }}
     image-tag: ${{ env.IMAGE_TAG }}
